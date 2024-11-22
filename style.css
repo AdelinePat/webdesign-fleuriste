@@ -1,0 +1,630 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    border: none;
+}
+
+::selection {
+    background: rgba(143,110,154,0.5);
+}
+
+@font-face {
+    font-family: "Merge One";
+    src: url(./fonts/MergeOne-Regular.woff);
+  }
+  :root {
+    --babypink: rgb(255, 192, 203);
+    --darkpurple: #100716;
+    --purple: #362341;
+    --lightpurple: rgb(143, 110, 154);
+    --flashypink: #D42E4B;
+}
+
+/* color: var(--pink); */
+
+/* Header style */
+header {
+    color: var(--babypink);
+    font-family: "Marck Script", serif;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    background-image: url(./images/fleurs/annie-spratt-vs6a4EHj_Ro-unsplash_rotate1.JPG);
+    object-fit: cover;
+    height: 456px;
+    padding: 0px 0px 16px 0px;
+}
+
+nav {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    background: var(--darkpurple);
+    padding: 0px 16px;
+    /* align-self: flex-start; */
+}
+
+nav a {
+    padding: 16px;
+}
+
+nav input[type="text"] {
+    background: white;
+    color: var(--darkpurple);
+    border: 1 solid var(--purple);
+    padding: 8px;
+    border-radius: 8px;
+    font-family: "Merge One";
+    max-width: 450px;
+    width: 20%;
+}
+
+main p {
+    /* padding: 8px; */
+}
+
+h2 {
+    
+}
+
+h3 {
+    margin: 24px 0px 24px 0px;
+}
+
+h2 {
+    margin: 24px 0px 16px 0px;
+    font-family: "Marck Script", serif;
+    font-size: 24pt;
+    text-align: center;
+}
+
+h3, header h2 {
+    font-family: "Merge One";
+    text-align: center;
+}
+
+section {
+    background: white;
+    width: 100%;
+    padding: 16px 0px 8px 0px;
+}
+
+section h2 {
+    text-shadow: 0px 0px 2px rgba(0,0,0,0.5);
+}
+
+.info {
+    width: 86%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.info h2 {
+
+}
+
+.info p {
+    line-height: 20pt;
+    text-align: center;
+}
+
+#service {
+    background: linear-gradient(0.3turn, var(--lightpurple), var(--purple));
+    color: white;
+    margin: 16px 0px 8px 0px;
+    padding: 16px 0px;
+}
+
+#service h2, #equipe h2 {
+    text-shadow: 0px 0px 2px rgba(255,255,255,0.5);
+}
+
+#service h3 {
+    color: var(--lightpurple);
+}
+
+#service article {
+    max-width: 290px;
+    width: 85%;
+    background: white;
+    color: black;
+    margin-bottom: 32px;
+    border-radius: 8px;
+    padding-bottom: 16px;
+    box-shadow: 0px 0px 8px var(--darkpurple);
+}
+
+.explication {
+    padding: 0px 24px;        
+}
+
+.explication p {
+    margin-bottom: 16px;
+}
+
+.liste-service {
+    margin-top: 24px;
+    display: flex;
+}
+
+.liste-service img {
+    height: 180px;
+    width: 100%;
+    border-radius: 8px 8px 0px 0px;
+    object-fit: cover;
+
+}
+
+.identite {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-right: 8px;
+}
+
+.identite img {
+    margin: 0px 16px 0px 0px;
+}
+
+#slogan {
+    font-family: "Merge One";
+    color: white;
+    font-size: 12pt;
+    padding: 16px;
+}
+
+#slogan h2, #slogan p {
+    max-width: 80%;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#slogan h2 {
+    margin: 0px 0px 32px 0px;
+}
+
+#slogan p {
+    text-align:right;
+    position: relative;
+    left: 20%;
+    margin: 0px 0px 32px 0px;    
+}
+
+button {
+    background: none;
+}
+
+.info button {
+    width: 100%;
+}
+
+
+
+button a, input[type="submit"] {
+    background: var(--babypink);
+    font-family: "Merge One";
+    text-transform: uppercase;
+    color: black;
+    padding: 8px 16px;
+    margin: 32px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+button a:hover, input[type="submit"]:hover {
+    background: white;
+}
+
+section button, input[type="submit"] {
+    margin: 16px;
+    text-align: center;
+    margin: auto;
+}
+
+.readmore {
+   
+}
+
+.readmore {
+    font-family: "Merge One";
+    padding: 4px 8px 4px 8px;
+    color: var(--flashypink);
+    font-size: 12pt;
+    font-weight: bold;
+    letter-spacing: 0.5pt;
+    border: 1px solid var(--flashypink);
+    border-radius: 4px;
+    position:unset;
+    right: 0px;
+}
+
+.readmore:hover {
+    background: var(--flashypink);
+    color: white;
+}
+
+p {
+    font-family: "Merge One";
+}
+
+.info_entreprise {
+    background: url(./images/icons/pinkflower.svg) 120% 120% no-repeat fixed;
+}
+
+.info_entreprise article {
+    width: 86%;
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    flex-flow: column nowrap;
+    line-height: 20pt;
+}
+
+.info_entreprise p:first-of-type {
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--lightpurple);
+}
+
+.info_entreprise p:last-of-type {
+    margin-bottom: 24px;
+}
+
+#equipe {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background: linear-gradient(0.3turn, var(--lightpurple), var(--purple));
+}
+
+#equipe h2 {
+    display: block;
+    width: 100%;
+    color: white;
+}
+
+#equipe img {
+    border-radius: 250px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 4px solid var(--lightpurple)
+}
+
+
+.presentation h3 {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#equipe article {
+    display: flex;
+    padding: 24px;
+    justify-content: center;
+}
+
+#equipe article:nth-of-type(2n+1) .presentation h3 {
+    flex-direction: row-reverse;
+}
+
+.presentation strong {
+    color: var(--darkpurple);
+    font-weight: normal;
+    font-variant: small-caps;
+}
+.presentation {
+    display: flex;
+    flex-flow: column nowrap;
+    align-self: center;
+
+    color: #c6c6c6;
+    text-align: justify;
+}
+
+
+#nous_choisir {
+    border-bottom: 1px solid var(--lightpurple);
+    margin-bottom: 32px;
+}
+
+#nous_choisir p {
+    line-height: 1.5em;
+    margin-bottom: 16px;
+}
+
+#nous_choisir strong {
+    color: var(--flashypink)
+}
+
+.galerie img, .galerie_service img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: 0px 0px 4px var(--lightpurple);
+}
+
+.galerie_service {
+    width: 86%;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    padding-bottom: 32px;
+    margin-bottom: 32px;
+    border-bottom: 1px solid var(--flashypink);
+}
+
+.galerie_service:last-of-type {
+    border-bottom: none;
+}
+
+
+form {
+    width: calc(100% - 64px);
+    max-width: 1100px;
+    margin: auto;
+    font-family: "Merge One";
+}
+
+fieldset {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    margin-bottom: 32px;
+
+}
+
+label {
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 8px 0px;
+    color: var(--flashypink);
+}
+
+#service label {
+    color: white;
+}
+
+#identité {}
+
+#vous-contacter {}
+
+#votre-commande {}
+
+#finalisation-form {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+
+.finalisation-item {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 16px;
+
+}
+
+.item-form {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.item-form input, .item-form textarea, .item-form select {
+    padding: 16px 8px;
+    border: 1px solid var(--purple);
+    border-radius: 8px;
+}
+
+@media screen and (min-width: 865px) {
+    header {
+        background-position:  50% 50%;
+    }
+
+    nav {
+        justify-content: space-between;
+        align-content: center;
+    }
+
+    nav a {
+        color: white;
+        font-family: "Merge One";
+        font-variant: small-caps;
+        letter-spacing: 1pt;
+        display: inline-block;
+        line-height: 2em;
+        vertical-align: center;
+    }
+
+    nav a:hover {
+        padding-bottom: 14px;
+        background: rgba(255,255,255,0.2);
+        border-bottom: 2px solid var(--flashypink);
+
+    }
+
+    a#active_link {
+        border-bottom: 2px solid var(--flashypink);
+        padding-bottom: 14px;
+        background: rgba(255,255,255,0.1);
+    }
+
+    nav a:focus {
+        border-bottom: 2px solid var(--flashypink);
+        color: var(--flashypink);
+    }
+
+    #slogan {
+        width: 60%;
+        margin-left: 15%;
+    }
+
+    .liste-service {
+        flex-flow: row wrap;
+        gap: 16px;
+        align-items: stretch;
+        justify-content: space-around;
+        }
+    
+    #equipe article {
+        flex-flow: row nowrap;
+        margin: 0px 0px 24px 0px;
+    }
+
+    #equipe article:nth-of-type(2n+1) {
+        flex-flow: row-reverse nowrap;
+    }
+
+    #equipe article:nth-of-type(2n+1) .presentation {
+        text-align: right;
+        margin: 0px 16px 0px 0px;
+    }
+
+    .presentation {
+        margin: 0px 0px 0px 16px;
+        width: 70%;
+        max-width: 700px;
+    }
+
+    .galerie {
+        width: 86%;
+        max-width: 1100px;
+        margin: auto;
+        display: grid;
+        grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr 1fr;
+        gap: 32px;
+    }
+
+    .galerie img {
+        max-width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 16px;
+        box-shadow: 0px 0px 4px var(--lightpurple);
+    }
+    
+    .galerie_service {
+        grid-template: 1fr / 1fr 1fr 1fr;
+        gap: 32px;
+    }
+        
+    fieldset {
+        flex-flow: row wrap;
+    }
+
+    #votre-commande {
+        flex-flow: column nowrap;
+    }
+
+    #votre-commande .item-form {
+        width: calc(100% - 32px);
+        margin:auto;
+    }
+
+    .item-form {
+        width: calc(50% - 32px);
+    }
+
+    #identité .item-form:first-of-type {
+        width: calc(100% - 32px);
+    }
+    
+    #vous-contacter .item-form:last-of-type {
+        width: calc(100% - 32px);
+    }
+
+}
+
+@media screen and (max-width: 864px) {
+
+    header {
+        background-position:  50% 50%;
+    }
+
+    .navigation {
+        display: none;
+    }
+    
+    nav {
+        padding: 16px;
+    }
+
+    nav input {
+        display: none;
+    }
+
+    p {
+        font-size: 12pt;
+    }
+
+    .liste-service {
+        flex-flow: column nowrap;
+        align-items: center ;
+    }
+
+    #equipe article {
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+
+    .presentation {
+        width: 90%;
+        margin-top: 8px;
+        padding-bottom: 16px;
+    }
+
+    .galerie {
+        width: 86%;
+        max-width: 1100px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .galerie_service {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    fieldset {
+        flex-flow: column nowrap;
+    }
+}
+
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-self: center;
+    /* gap: 16px; */
+}
+
+footer {
+    margin-top: 56px;
+    padding: 16px 16px 56px 16px;
+    color: white;
+    background: var(--darkpurple);
+}
+
+footer p {
+    font-size: 12pt;
+    text-align: center;
+}
+
+
+footer img {
+    height: 35px;
+    width: 35px;
+    object-fit: contain;
+    padding: 8px;
+    margin: 0px 16px 0px 0px;
+    vertical-align: bottom;
+}
+/* Header style end */

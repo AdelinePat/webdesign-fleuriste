@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+</html>
+<html lang="fr">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Adeline Patenne">
+        <link rel="icon" type="image/x-icon" href="./images/icons/favicon_io/favicon.ico">
+        <title>
+            Home - BloomPetals
+        </title>
+        <link href="style.css" rel="stylesheet"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+   
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <div class="identite">
+                    <img src="./images/icons/pinkflower.svg" alt="logo de Bloom Petals" width="30px">
+                    <h1>BloomPetals</h1>
+                </div>
+                <div class="navigation">
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="entreprise.html">Entreprise</a>
+                        </li>
+                        <li>
+                            <a href="realisation.html">Réalisations</a>
+                        </li>
+                        <li>
+                            <a href="contacts.html" id="active_link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <input type="text" placeholder="Search..">
+            </nav>
+            <div id="slogan">
+                <h2>
+                    Créativité Illimitée
+                </h2>
+                <p>
+                    Nous repoussons les limites de la créativité pour concevoir des bouquets uniques et mémorables
+                </p>
+                <button type="button">
+                    <a href="contacts.html#service">Commander</a>
+                </button>
+            </div>
+        </header>
+        
+        <main>
+            <section>
+
+                <form method="get" action="">
+
+                    <h2>Formulaire de contact</h2>
+
+                    <fieldset id="identité">
+                        <div class="item-form">
+                            <label for="civilite">Votre civilité</label><br>
+                            <select name="civilite" id="civilite">
+                                <option value="madame">Madame</option>
+                                <option value="Monsieur">Monsieur</option>
+                                <option value="nonbinaire" selected>Préfère ne pas préciser</option>
+                            </select>
+                        </div>
+
+                        <div class="item-form">
+                            <label for="prenom">Votre prénom</label>
+                            <input type="text" name="prenom" id="prenom" required>
+                        </div>
+
+                        <div class="item-form">
+                            <label for="nom">Votre nom</label>
+                            <input type="text" name="nom" id="nom" required>
+                        </div>
+                    </fieldset>
+
+                    <fieldset id="vous-contacter">
+                        <div class="item-form">
+                            <label for="telephone">Votre numéro de téléphone</label>
+                            <input type="tel" name="telephone" id="telephone">
+                        </div>
+
+                        <div class="item-form">
+                            <label for="email">Votre e-mail</label>
+                            <input type="email" name="email" id="email" required>
+                        </div>
+
+                        <div class="item-form">
+                            <label for="adresse-postale">Votre adresse postale</label>
+                            <input type="text" id="adresse-postale" name="adresse-postale" autocomplete="street-address" required>
+                        </div>
+
+                        <div class="item-form">
+                            <label for="code-postal">Code postal</label>
+                            <input type="number" id="code-postal" name="code-postal" autocomplete="code-postal" required>
+                        </div>
+
+                        <div class="item-form">
+                            <label for="ville">Ville</label>
+                            <input type="text" id="ville" name="ville" autocomplete="address-level2" required>
+                        </div>
+                    </fieldset>
+
+                    <fieldset id="finalisation-form">
+                        <div class="finalisation-item">
+                        <input type="checkbox" name="politique" id="politique" required> <label for="politique">J'accepte la politique de confidentialité de l’entreprise.</label>
+                        </div>
+
+                        <input type="submit" value="Envoyer">
+                    </fieldset>
+
+                </form>
+                
+            </section>
+
+            <section id="service">
+
+                <form method="get" action="">
+
+                    <h2>Votre projet</h2>
+
+                    <fieldset id="identité">
+                        <div class="item-form">
+                            <label for="civilite">Votre civilité</label><br>
+                            <select name="civilite" id="civilite">
+                                <option value="madame">Madame</option>
+                                <option value="Monsieur">Monsieur</option>
+                                <option value="nonbinaire" selected>Préfère ne pas préciser</option>
+                            </select>
+                        </div>
+
+                        <div class="item-form">
+                            <label for="prenom">Votre prénom</label>
+                            <input type="text" name="prenom" id="prenom" required>
+                        </div>
+
+                        <div class="item-form">
+                            <label for="nom">Votre nom</label>
+                            <input type="text" name="nom" id="nom" required>
+                        </div>
+                    </fieldset>
+
+                    <fieldset id="vous-contacter">
+                        <div class="item-form">
+                            <label for="telephone">Votre numéro de téléphone</label>
+                            <input type="tel" name="telephone" id="telephone">
+                        </div>
+                    </fieldset>
+
+                    <fieldset id="votre-commande">
+                        <div class="item-form">
+                            <label for="date">Pour quelle date voulez-vous vos fleurs ?</label>
+                            <input type="date" name="date" id="date">
+                        </div>
+
+                        <div class="item-form">
+                            <label for="Description">Description de votre commande</label>
+                            <textarea name="Description" id="description" rows="5" required></textarea>
+                        </div>
+                    </fieldset>
+
+                    <fieldset id="finalisation-form">
+                        <div class="finalisation-item">
+                        <input type="checkbox" name="politique" id="politique" required> <label for="politique">J'accepte la politique de confidentialité de l’entreprise.</label>
+                        </div>
+
+                        <input type="submit" value="Envoyer">
+                    </fieldset>
+
+                </form>
+
+            </section>
+            <section class="info">
+                <h2>
+                    Merci de votre confiance
+                </h2>
+                <p>
+                    N'hésitez pas à nous contacter pour vos prochains événements.
+                </p>
+            </section>
+         </main>
+
+        <footer>
+            <p><a href=""><img src="./images/icons/instagram-pink.png" alt="logo d'instagram"></a><a><img src="./images/icons/meta-pink.png" alt="logo de meta"></a></p>
+            <p>BloomPetals © 2024 - Tous droits réservés.</p>
+        </footer>
+    </body>
