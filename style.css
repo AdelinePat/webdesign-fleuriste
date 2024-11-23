@@ -93,7 +93,7 @@ header {
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
-    background: url(./images/fleurs/annie-spratt-vs6a4EHj_Ro-unsplash_rotate1.JPG) no-repeat;
+    background: url(./images/fleurs/annie-spratt-vs6a4EHj_Ro-unsplash_rotate1v1.JPG) no-repeat;
     object-fit: cover;
     height: 456px;
     padding: 0px 0px 16px 0px;
@@ -110,8 +110,13 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    align-items: center;
     margin-right: 8px;
     padding: 0px 0px 0px 16px;
+}
+
+.identite h1 {
+    padding-right: 24px;
 }
 
 /* padding: 0px 16px; */
@@ -218,6 +223,19 @@ article {
     max-width: 1100px;
     margin: auto;
     margin-bottom: 24px;
+}
+
+#galerie_video {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+#galerie_video video {
+    border-radius: 4px;
+    box-shadow: 0px 0px 8px var(--flashypink);
 }
 
 article:last-of-type {
@@ -574,6 +592,9 @@ footer img {
     }
     /*Fin Style présentation de l'équipe */  
 
+    #galerie_video video {
+        max-width: 40%;
+    }    
 
 /* Fin de Style des sections avec fond dégradé */
 
@@ -732,6 +753,9 @@ footer img {
         align-items: center ;
     }
 /*Fin Style liste des services pages d'accueil */
+    #galerie_video video {
+        max-width: 100%;
+    }
 
 
 
