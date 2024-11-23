@@ -40,8 +40,17 @@
                         </li>
                     </ul>
                 </div>
-                <input type="text" placeholder="Search..">
+                
+                <div class="fin-navigation">
+                    <img src="./images/icons/pink-menu-svgrepo-com.svg" alt="menu hamburger" class="menu-hamburger">
+                    <img src="./images/icons/pink-close-bold-svgrepo-com.svg" alt="fermer menu hamburger" class="close-menu-hamburger">
+                    <button type="button">
+                    <a href="contacts.html#service"><img src="./images/icons/purple-shopping-cart-11-svgrepo-com.svg" alt="icon d'un caddie">Commander</a>
+                    </button>
+                    <input type="text" placeholder="Search...">
+                </div>
             </nav>
+
             <div id="slogan">
                 <h2>
                     Fleurs Fraîches et Durables
@@ -49,9 +58,6 @@
                 <p>
                     Nous sélectionnons uniquement les fleurs les plus fraîches et de la plus haute qualité pour garantir la beauté de nos créations du début à la fin de votre fête.
                 </p>
-                <button type="button">
-                    <a href="contacts.html#service">Commander</a>
-                </button>
             </div>
         </header>
         
@@ -127,17 +133,30 @@
                 </article>
             </section>
             <section class="info">
-                <h3>
-                    Réalisez le bouquet qui vous correspond maintenant
-                </h3>
-                <button type="button">
-                    <a href="contacts.html#service">Commander</a>
-                </button>
+                <article>
+                    <h3>
+                        Réalisez le bouquet qui vous correspond maintenant
+                    </h3>
+                    <button type="button">
+                        <a href="contacts.html#service">Commander</a>
+                    </button>
+                </article>
             </section>
         </main>
 
         <footer>
-            <p><a href=""><img src="./images/icons/instagram-pink.png" alt="logo d'instagram"></a><a><img src="./images/icons/meta-pink.png" alt="logo de meta"></a></p>
+            <p><a href=""><img src="./images/icons/instagram-pink.png" alt="logo d'instagram"></a>
+                <a href=""><img src="./images/icons/meta-pink.png" alt="logo de meta"></a></p>
             <p>BloomPetals © 2024 - Tous droits réservés.</p>
         </footer>
     </body>
+    
+    <script>
+        const menuHamburger = document.querySelector(".menu-hamburger")
+        const navLinks = document.querySelector(".navigation")
+
+        menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu')
+        })
+    </script>
+</html>
