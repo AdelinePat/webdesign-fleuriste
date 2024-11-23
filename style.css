@@ -16,6 +16,7 @@
     --purple: #362341;
     --lightpurple: rgb(143, 110, 154);
     --flashypink: #D42E4B;
+    --animation-curve: cubic-bezier(1,0,0,1);
 }
 
 ::selection {
@@ -42,6 +43,8 @@ p {
     font-family: "Merge One";
     padding: 0px 0px 16px 0px;
 }
+
+
 
 /* Style des boutons */
 button {
@@ -123,6 +126,10 @@ nav ul {
     flex-flow: row wrap;
     justify-content: space-evenly;
     align-self: center;
+}
+
+nav input[type="checkbox"] {
+    display: none;
 }
 
 .fin-navigation {
@@ -648,6 +655,24 @@ footer img {
         margin-top: 0px;
     }
 
+    nav label {
+        cursor: pointer;
+        height:fit-content;
+        width: 24px;
+        background: url(./images/icons/pink-menu-svgrepo-com.svg) no-repeat 0% 50%;
+        background-size: contain;
+        transition: all 0.4s var(--animation-curve);
+        transform: rotatez(0deg);
+    }
+
+    #toggle:checked ~ label {
+        background: url(./images/icons/pink-close-bold-svgrepo-com.svg) no-repeat;
+        background-size: contain;
+        transform: rotatez(360deg);
+
+        
+    }
+
     nav ul {
         width: 100vw;
         height: 100vh;
@@ -687,6 +712,15 @@ footer img {
         z-index: 1;
         order: 1;
         }
+
+    .fin-navigation {
+        padding: 0px;
+    }
+
+    .fin-navigation input {
+        display: none;
+
+    }
 /* Fin de style du header */
 
 
