@@ -13,8 +13,8 @@
 :root {
     --babypink: rgb(255, 192, 203);
     --darkpurple: rgb(16, 7, 22);
-    --purple: #362341;
-    --lightpurple: rgb(143, 110, 154);
+    --purple: rgb(54, 35, 65);
+    --lightpurple: rgb(144, 111, 155);
     --flashypink: #D42E4B;
     --animation-curve: cubic-bezier(1,0,0,1);
 }

@@ -15,4 +15,4 @@ First HTML and CSS project for school.
 | Light pink | ![#ffc0cb](https://via.placeholder.com/10/ffc0cb?text=+) #ffc0cb |
 
 ### <u>Preview :</u>
-![Bloom Petal screenshot](https://media.discordapp.net/attachments/1127262879092056067/1312844163796041758/image.png?ex=674df8e8&is=674ca768&hm=95a31cae53f92daae4d668465b51e73434c2b2677cc90052615bbb2b4e99e538&=&format=webp&quality=lossless&width=550&height=285)
+<img src="./preview-mobile.jpg" alt="screenshot Bloom Petal mobile" width="20%" align="left"> <img src="./preview-desktop.jpg" alt="screenshot Bloom Petal desktop" width="70%" align="right">
